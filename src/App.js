@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// App.jsx
+import React from 'react';
+import Sidebar from "./components/sidebar/Sidebar";
+import { LineGraph } from "./components/Line";
+import { PieGraph } from './components/Pie';
+import KakeiboTable from './components/kakeibo_Table/kakeiboTable';
 
-function App() {
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <div className="Sidebar">
+        <Sidebar />
+      </div>
+
+      <div style={{ marginLeft: '250px', padding: '20px' }}> {/* Adjust main content position */}
+        <section style={{ display: 'flex', alignItems: 'center' }}>
+          <div className="App" style={{ width: '50%' }}>
+            <LineGraph />
+          </div>
+
+          <div className="App" style={{ width: '50%' }}>
+            <PieGraph />
+          </div>
+        </section>
+
+        <div className="App">
+          <h1>家計簿一覧</h1>
+            <KakeiboTable />
+          </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
+
