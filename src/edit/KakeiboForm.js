@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import KakeiboFormView from './Edit';
+import KakeiboFormView from './KakeiboFormView';
 
 const KakeiboForm = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +18,7 @@ const KakeiboForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:8080/expense/new', {
+    fetch('http://localhost:8080/payments/new', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
