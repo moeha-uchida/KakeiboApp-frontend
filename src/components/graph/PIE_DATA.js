@@ -9,7 +9,7 @@ const PieChartData = {
     datasets: [
         {
             label: "Time Spent",
-            data: [120, 60, 30, 90, 45],
+            data: [180, 30, 30, 90, 45],
             backgroundColor: [
                 "rgba(255, 99, 132, 0.6)",
                 "rgba(54, 162, 235, 0.6)",

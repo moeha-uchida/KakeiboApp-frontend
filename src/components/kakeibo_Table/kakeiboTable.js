@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import KakeiboTableRow from './kakeiboTableRow';
+import KakeiboTableRow from './KakeiboTableRow';
+import './kakeibo.css';
 
 function KakeiboTable() {
   const [kakeiboData, setKakeiboData] = useState([]);
@@ -12,7 +13,8 @@ function KakeiboTable() {
   }, []);
 
   return (
-    <table>
+    // テーブル構成をバックエンドと合わせる必要あり！！
+    <table className='kakeibo'> 
       <thead>
         <tr>
           <th>ID</th>

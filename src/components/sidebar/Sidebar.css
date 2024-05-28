@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Walter+Turncoat&family=Yusei+Magic&family=Zen+Kurenaido&display=swap');
+
 .Sidebar {
-    height: 100vh; /* Use 100vh to ensure it takes up the full viewport height */
+    height: 100vh;
     width: 200px;
-    background-color: rgba(240, 240, 52, 0.8);
+    background-color: rgb(240, 240, 52);
     position: fixed;
     top: 0;
     left: 0;
@@ -9,13 +11,17 @@
 }
 
 .SidebarList {
+    font-family: "Zen Kurenaido", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
     height: auto;
+    text-align: center;
     padding: 0;
     width: 100%;
 }
 
 .SidebarList #active {
-    background-color: rgba(186, 186, 44, 0.8);
+    background-color: rgb(235, 135, 21);
 }
 
 .SidebarList .row {
@@ -23,7 +29,6 @@
     height: 60px;
     /* color: white; */
     line-height: 60px;
-    padding-left: 20px;
     box-sizing: border-box;
     /* justify-content: center;
     align-items: center; */
@@ -31,5 +36,5 @@
 
 .SidebarList .row:hover {
     cursor: pointer;
-    background-color: rgba(186, 186, 44, 0.8);
+    background-color: rgb(235, 135, 21,0.4);
 }
