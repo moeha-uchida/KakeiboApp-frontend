@@ -3,7 +3,8 @@ import React from 'react';
 import Sidebar from "./components/sidebar/Sidebar";
 import { LineGraph } from "./components/graph/Line";
 import { PieGraph } from './components/graph/Pie';
-import KakeiboTable from './components/kakeibo_Table/KakeiboTable'
+import KakeiboTable from './components/kakeibo_Table/kakeiboTable'
+import './App.css';
 
 const App = () => {
 
